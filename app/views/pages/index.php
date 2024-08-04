@@ -1,148 +1,212 @@
-<?php
-  require APPROOT . '/views/inc/header.php';
-?>
-
-
+<?php require APPROOT . '/views/inc/header.php'; ?>
       <div id="page-content-wrapper">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
-        >
-          <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-        </nav>
 
         <div class="container-fluid">
-          <h1 class="mt-4">Admin Dashboard</h1>
+          <!-- <h1 class="mt-4">Admin Dashboard</h1> -->
           <div id="content">
             <div id="users" class="table-responsive mt-4">
-              <h2>Users</h2>
+              <h2>Users/Admins</h2>
               <table class="table table-striped table-bordered">
                 <thead>
                   <tr>
-                    <th className="text-end" scope="col">id</th>
-                    <th className="text-end" scope="col">username</th>
-                    <th className="text-end" scope="col">email</th>
-                    <th className="text-end" scope="col">password</th>
-                    <th className="text-end" scope="col">phone_number</th>
-                    <th className="text-end" scope="col">created_at</th>
-                    <th className="text-end" scope="col">role</th>
+                    <th className="text-end" scope="col">Id</th>
+                    <th className="text-end" scope="col">Username</th>
+                    <th className="text-end" scope="col">Email</th>
+                    <th className="text-end" scope="col">Password</th>
+                    <th className="text-end" scope="col">Phone Number</th>
+                    <th className="text-end" scope="col">Created At</th>
+                    <th className="text-end" scope="col">Role</th>
 
-                    <th className="text-end" scope="col">Actions</th>
+                    <th class="action-text" scope="col">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Ricky Antony</td>
+                    <td>1</td>
                     <td>ricky</td>
-                    <td>wefwe</td>
+                    <td>ricky@example.com</td>
                     <td>efwef</td>
+                    <td>0789578999</td>
                     <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
+                    <td>Admin</td>
+                    <td class="text-end">
+
+                      <button class="add-button">
+                        <i class="bi bi-person-plus-fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                        </i>
+                      </button>
+
+                      <button class="edit-button">
+                        <i class="bi bi-pencil-square">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                          </svg>
+                        </i>
+                      </button>
+                    
+                      <button class="delete-button">
+                        <i class="bi bi-trash3-fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                        </svg>
+                        </i>
+                      </button>
                     </td>
                   </tr>
                   <tr>
-                    <td>Emma Watson</td>
+                    <td>2</td>
+                    <td>emma</td>
                     <td>emma@example.com</td>
-                    <td>wefwe</td>
                     <td>efwef</td>
+                    <td>0789789789</td>
                     <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
+                    <td>User</td>
+                    <td class="text-end">
+
+                    <button class="add-button">
+                        <i class="bi bi-person-plus-fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                        </i>
+                      </button>
+
+                      <button class="edit-button">
+                        <i class="bi bi-pencil-square">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                          </svg>
+                        </i>
+                      </button>
+                    
+                      <button class="delete-button">
+                        <i class="bi bi-trash3-fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                        </svg>
+                        </i>
+                      </button>
                     </td>
                   </tr>
                   <tr>
-                    <td>Rowen Atkinson</td>
+                    <td>3</td>
+                    <td>rown</td>
                     <td>rown@example.com</td>
-                    <td>wefwe</td>
                     <td>efwef</td>
+                    <td>0789632140</td>
                     <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
+                    <td>Admin</td>
+                    <td class="text-end">
+
+                    <button class="add-button">
+                        <i class="bi bi-person-plus-fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                        </i>
+                      </button>
+
+                      <button class="edit-button">
+                        <i class="bi bi-pencil-square">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                          </svg>
+                        </i>
+                      </button>
+                    
+                      <button class="delete-button">
+                        <i class="bi bi-trash3-fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                        </svg>
+                        </i>
+                      </button>
                     </td>
                   </tr>
                   <tr>
-                    <td>Antony Hopkins</td>
+                    <td>4</td>
+                    <td>antony</td>
                     <td>antony@example.com</td>
-                    <td>wefwe</td>
                     <td>efwef</td>
+                    <td>0789574123</td>
                     <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
+                    <td>User</td>
+
+                    <td class="text-end">
+
+                    <button class="add-button">
+                        <i class="bi bi-person-plus-fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                        </i>
+                      </button>
+
+                      <button class="edit-button">
+                        <i class="bi bi-pencil-square">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                          </svg>
+                        </i>
+                      </button>
+                    
+                      <button class="delete-button">
+                        <i class="bi bi-trash3-fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                        </svg>
+                        </i>
+                      </button>
+                      
                     </td>
                   </tr>
                   <tr>
-                    <td>Jennifer Schramm</td>
+                    <td>5</td>
+                    <td>jennifer</td>
                     <td>jennifer@example.com</td>
-                    <td>wefwe</td>
                     <td>efwef</td>
+                    <td>0789996540</td>
                     <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
+                    <td>User</td>
+                    <td class="text-end">
+
+                    <button class="add-button">
+                        <i class="bi bi-person-plus-fill">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                        </i>
+                      </button>
+
+                      <button class="edit-button">
+                        <i class="bi bi-pencil-square">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                          </svg>
+                        </i>
+                      </button>
+                    
+                      <button class="delete-button">
+                        <i class="bi bi-trash3-fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                        </svg>
+                        </i>
+                      </button>
+
                     </td>
                   </tr>
                 </tbody>
@@ -151,9 +215,7 @@
           </div>
         </div>
       </div>
-      <!-- /#page-content-wrapper -->
     </div>
-    <!-- /#wrapper -->
 
     
  

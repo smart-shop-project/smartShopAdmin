@@ -3,28 +3,21 @@
 
       <!-- Page Content -->
       <div id="page-content-wrapper">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
-        >
-          <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-        </nav>
 
         <div class="container-fluid">
-          <h1 class="mt-4">Admin Dashboard</h1>
+          <!-- <h1 class="mt-4">Admin Dashboard</h1> -->
           <div id="content">
             <div id="users" class="table-responsive mt-4">
               <h2>Orders</h2>
               <table class="table table-striped table-bordered">
                 <thead>
                   <tr>
-                    <th className="text-end" scope="col">id</th>
-                    <th className="text-end" scope="col">total_amount</th>
-                    <th className="text-end" scope="col">shipping_adress</th>
-                    <th className="text-end" scope="col">user_id</th>
-                    <th className="text-end" scope="col">created_at</th>
-                    <th className="text-end" scope="col">status</th>
-
-                    <th className="text-end" scope="col">Actions</th>
+                    <th className="text-end" scope="col">Id</th>
+                    <th className="text-end" scope="col">Total Amount</th>
+                    <th className="text-end" scope="col">Shipping Address</th>
+                    <th className="text-end" scope="col">Created At</th>
+                    <th className="text-end" scope="col">User Id</th>
+                    <th className="text-end" scope="col">Status</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -35,20 +28,6 @@
                     <td>efwef</td>
                     <td>efwef</td>
                     <td>efwef</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
-                    </td>
                   </tr>
                   <tr>
                     <td>Emma Watson</td>
@@ -57,20 +36,6 @@
                     <td>efwef</td>
                     <td>efwef</td>
                     <td>efwef</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
-                    </td>
                   </tr>
                   <tr>
                     <td>Rowen Atkinson</td>
@@ -79,20 +44,6 @@
                     <td>efwef</td>
                     <td>efwef</td>
                     <td>efwef</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
-                    </td>
                   </tr>
                   <tr>
                     <td>Antony Hopkins</td>
@@ -101,20 +52,6 @@
                     <td>efwef</td>
                     <td>efwef</td>
                     <td>efwef</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
-                    </td>
                   </tr>
                   <tr>
                     <td>Jennifer Schramm</td>
@@ -123,20 +60,6 @@
                     <td>efwef</td>
                     <td>efwef</td>
                     <td>efwef</td>
-                    <td className="text-end">
-                      <ActionButton
-                        icon="edit"
-                        title="Edit"
-                        variant="action"
-                        className="p-0 me-2"
-                      />
-                      <ActionButton
-                        icon="trash-alt"
-                        title="Delete"
-                        variant="action"
-                        className="p-0"
-                      />
-                    </td>
                   </tr>
                 </tbody>
               </table>

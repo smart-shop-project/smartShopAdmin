@@ -14,7 +14,7 @@ body {
 
 #page-content-wrapper {
     width: 100%;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .table-responsive {
@@ -23,4 +23,88 @@ body {
 
 .toggled #sidebar-wrapper {
     margin-left: -250px;
+}
+
+#title {
+    color: #0eb1a4;
+    font-size: 1.5rem;
+    background-color: #F8F9FA;
+}
+
+.add-button {
+    background: none;
+    border: none;
+}
+
+.edit-button {
+    background: none;
+    border: none;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+}
+
+.action-text {
+    text-align: center;
+}
+
+.text-end {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button:hover {
+    color: #00cb29;
+}
+
+.edit-button:hover {
+    color: #0268D9;
+}
+
+.delete-button:hover {
+    color: red;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    background-color: #F8F9FA;
+    
+}
+
+.navHead {
+    display: flex;
+    align-items: center;
+    background-color: #F8F9FA;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile {
+    margin-right: 2rem;
+}
+
+.profileBtn {
+    background: none;
+    border: none;
+    color: #0FC4B5;
+}
+
+#menu-toggle {
+    background-color: #0FC4B5;
+    color: white;
+}
+
+#sidebar-wrapper #sidebar-wrapper2 a {
+    color: #0eb1a4;
+    background-color: #F8F9FA   ;
+}
+
+#sidebar-wrapper #sidebar-wrapper2 a:hover {
+    background-color: #0FC4B5;
+    color: white;
 }

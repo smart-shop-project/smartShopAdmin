@@ -6,24 +6,28 @@ class Pages extends controller {
 
     public function index(){
 
-      if(isLoggedIn()){
-        redirect('posts');
-      }
+      // if(isLoggedIn()){
+      //   redirect('pages');
+      // }
 
       $data = [
-        'title' => 'SHARE POSTS',
-        'discription' => 'simple social network built on the zain MVC php framework'
+        'title' => 'index TEST',
+        'discription' => 'Test description'
       ];
 
       $this->view('pages/index', $data);
     }
 
     public function cart(){
+      
         $data = [
-            'title' => '',
+            'title' => 'cart',
             'discription' => ''
           ];
-        
+
+          $this->view('pages/cart', $data);
+
+
     }
 
     public function wishlist(){
@@ -32,6 +36,7 @@ class Pages extends controller {
             'discription' => ''
           ];
 
+          $this->view('pages/wishlist', $data);
     }
 
     public function orders(){
@@ -39,7 +44,7 @@ class Pages extends controller {
             'title' => '',
             'discription' => ''
           ];
-
+          $this->view('pages/orders', $data);
     }
 
     public function categories(){
@@ -47,7 +52,7 @@ class Pages extends controller {
             'title' => '',
             'discription' => ''
           ];
-
+          $this->view('pages/categories', $data);
     }
 
     public function order_items(){
@@ -55,7 +60,7 @@ class Pages extends controller {
             'title' => '',
             'discription' => ''
           ];
-
+          $this->view('pages/order_items', $data);
     }
 
     public function products(){
@@ -63,7 +68,7 @@ class Pages extends controller {
             'title' => '',
             'discription' => ''
           ];
-
+          $this->view('pages/products', $data);
     }
 
     public function contact_us(){
@@ -71,6 +76,7 @@ class Pages extends controller {
             'title' => '',
             'discription' => ''
           ];
+          $this->view('pages/contact_us', $data);
 
     }
 
@@ -79,6 +85,6 @@ class Pages extends controller {
             'title' => '',
             'discription' => ''
           ];
-
+          $this->view('pages/product_categories', $data);
     }
 }
