@@ -108,3 +108,9 @@ body {
     background-color: #0FC4B5;
     color: white;
 }
+
+.titleAdd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -21,51 +21,22 @@
                   </tr>
                 </thead>
                 <tbody>
+                <?php if (isset($data['contact_us']) && is_array($data['contact_us'])): ?>
+                  <?php foreach($data['contact_us'] as $contact_us): ?>
                   <tr>
-                    <td>Ricky Antony</td>
-                    <td>ricky</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                    <td>ricky</td>
+                    <td><?php echo $contact_us->id; ?></td>
+                    <td><?php echo $contact_us->full_name; ?></td>
+                    <td><?php echo $contact_us->email; ?></td>
+                    <td><?php echo $contact_us->subject; ?></td>
+                    <td><?php echo $contact_us->message; ?></td>
+                    <td><?php echo $contact_us->created_at; ?></td>
+                    <td><?php echo $contact_us->user_id; ?></td>
                   </tr>
-                  <tr>
-                    <td>Emma Watson</td>
-                    <td>emma@example.com</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                    <td>ricky</td>
-                  </tr>
-                  <tr>
-                    <td>Rowen Atkinson</td>
-                    <td>rown@example.com</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                  </tr>
-                  <tr>
-                    <td>Antony Hopkins</td>
-                    <td>antony@example.com</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                  </tr>
-                  <tr>
-                    <td>Jennifer Schramm</td>
-                    <td>jennifer@example.com</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>ricky</td>
-                  </tr>
+                  <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No Users</p>
+                <?php endif; ?>
+                  
                 </tbody>
               </table>
             </div>

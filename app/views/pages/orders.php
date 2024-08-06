@@ -11,6 +11,7 @@
               <h2>Orders</h2>
               <table class="table table-striped table-bordered">
                 <thead>
+                
                   <tr>
                     <th className="text-end" scope="col">Id</th>
                     <th className="text-end" scope="col">Total Amount</th>
@@ -21,46 +22,21 @@
                   </tr>
                 </thead>
                 <tbody>
+                <?php if (isset($data['orders']) && is_array($data['orders'])): ?>
+                  <?php foreach($data['orders'] as $orders): ?>
                   <tr>
-                    <td>Ricky Antony</td>
-                    <td>ricky</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
+                    <td><?php echo $orders->id; ?></td>
+                    <td><?php echo $orders->created_at; ?></td>
+                    <td><?php echo $orders->total_amount; ?></td>
+                    <td><?php echo $orders->shipping_address; ?></td>
+                    <td><?php echo $orders->status; ?></td>
+                    <td><?php echo $orders->user_id; ?></td>
                   </tr>
-                  <tr>
-                    <td>Emma Watson</td>
-                    <td>emma@example.com</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                  </tr>
-                  <tr>
-                    <td>Rowen Atkinson</td>
-                    <td>rown@example.com</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                  </tr>
-                  <tr>
-                    <td>Antony Hopkins</td>
-                    <td>antony@example.com</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                  </tr>
-                  <tr>
-                    <td>Jennifer Schramm</td>
-                    <td>jennifer@example.com</td>
-                    <td>wefwe</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                    <td>efwef</td>
-                  </tr>
+                  <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No Users</p>
+                <?php endif; ?>
+                  
                 </tbody>
               </table>
             </div>
