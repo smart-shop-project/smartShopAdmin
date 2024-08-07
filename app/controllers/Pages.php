@@ -94,11 +94,11 @@ class Pages extends Controller {
           $this->view('pages/product_categories', $data);
     }
 
-    public function login_signUp(){
+    public function login(){
         $data = [
             'title' => '',
             'discription' => ''
           ];
-          $this->view('pages/login_signUp', $data);
+          $this->view('user/login', $data);
     }
 }

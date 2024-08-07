@@ -30,7 +30,6 @@
                     <th className="text-end" scope="col">Phone Number</th>
                     <th className="text-end" scope="col">Created At</th>
                     <th className="text-end" scope="col">Role</th>
-
                     <th class="action-text" scope="col">Actions</th>
                   </tr>
                 </thead>
@@ -46,9 +45,6 @@
                     <td><?php echo $users->created_at; ?></td>
                     <td><?php echo $users->role; ?></td>
                     <td class="text-end">
-
-                      
-
                       <button class="edit-button">
                         <i class="bi bi-pencil-square">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

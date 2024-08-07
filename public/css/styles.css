@@ -25,6 +25,11 @@ body {
     margin-left: -250px;
 }
 
+#title a{
+    color: #0eb1a4 !important;
+    text-decoration: none !important;
+}
+
 #title {
     color: #0eb1a4;
     font-size: 1.5rem;

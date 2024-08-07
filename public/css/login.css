@@ -140,7 +140,7 @@ body {
 
 .input-box input:focus~i,
 .input-box input:valid~i {
-    color: #0ef;
+    color: #0eb1a4;
 }
 
 .btn {
@@ -167,7 +167,7 @@ body {
     left: 0;
     width: 100%;
     height: 300%;
-    background: linear-gradient(#081b29 , #0eb1a4 , #081b29 , #0eb1a4);
+    background: linear-gradient(#290808 , #0eb1a4 , #290908 , #0eb1a4);
     z-index: -1;
     transition: .5s;
 }
@@ -299,3 +299,4 @@ body {
     transform: rotate(-11deg) skewY(-41deg);
     transition-delay: 1.2s;
 }
+

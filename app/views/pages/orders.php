@@ -26,11 +26,11 @@
                   <?php foreach($data['orders'] as $orders): ?>
                   <tr>
                     <td><?php echo $orders->id; ?></td>
-                    <td><?php echo $orders->created_at; ?></td>
                     <td><?php echo $orders->total_amount; ?></td>
                     <td><?php echo $orders->shipping_address; ?></td>
-                    <td><?php echo $orders->status; ?></td>
+                    <td><?php echo $orders->created_at; ?></td>
                     <td><?php echo $orders->user_id; ?></td>
+                    <td><?php echo $orders->status; ?></td>
                   </tr>
                   <?php endforeach; ?>
                 <?php else: ?>
